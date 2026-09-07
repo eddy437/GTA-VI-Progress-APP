@@ -1,0 +1,327 @@
+vicecompanion/
+├── public/
+│   ├── backgrounds/
+│   │   ├── vice-bg.webp
+│   │   └── vice-bg-mobile.webp
+│   ├── images/
+│   │   ├── missions/
+│   │   │   └── .gitkeep
+│   │   ├── vehicles/
+│   │   │   └── .gitkeep
+│   │   ├── collectibles/
+│   │   │   └── .gitkeep
+│   │   ├── characters/
+│   │   │   └── .gitkeep
+│   │   └── businesses/
+│   │       └── .gitkeep
+│   ├── icons/
+│   │   ├── icon-192x192.png
+│   │   ├── icon-512x512.png
+│   │   └── .gitkeep
+│   ├── favicon/
+│   │   ├── favicon.ico
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── apple-touch-icon.png
+│   │   └── .gitkeep
+│   ├── manifest.webmanifest
+│   └── sw.js
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   ├── error.tsx
+│   │   ├── loading.tsx
+│   │   ├── not-found.tsx
+│   │   ├── robots.ts
+│   │   ├── sitemap.ts
+│   │   │
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   ├── register/
+│   │   │   └── page.tsx
+│   │   ├── forgot-password/
+│   │   │   └── page.tsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── missions/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   ├── error.tsx
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── map/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── collectibles/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── challenges/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── achievements/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── vehicles/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── businesses/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── stats/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── friends/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── crew/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   ├── notifications/
+│   │   │   ├── page.tsx
+│   │   │   ├── loading.tsx
+│   │   │   └── error.tsx
+│   │   │
+│   │   └── settings/
+│   │       ├── page.tsx
+│   │       ├── loading.tsx
+│   │       └── error.tsx
+│   │
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── sidebar.tsx
+│   │   │   ├── top-bar.tsx
+│   │   │   ├── glass-card.tsx
+│   │   │   ├── page-header.tsx
+│   │   │   └── bottom-nav.tsx
+│   │   │
+│   │   ├── dashboard/
+│   │   │   ├── progress-card.tsx
+│   │   │   ├── stat-card.tsx
+│   │   │   ├── reminder-card.tsx
+│   │   │   ├── ai-suggestion-card.tsx
+│   │   │   ├── activity-list.tsx
+│   │   │   ├── mission-summary.tsx
+│   │   │   └── garage-summary.tsx
+│   │   │
+│   │   ├── missions/
+│   │   │   ├── mission-list.tsx
+│   │   │   ├── mission-card.tsx
+│   │   │   ├── mission-details.tsx
+│   │   │   ├── mission-filters.tsx
+│   │   │   └── mission-objectives.tsx
+│   │   │
+│   │   ├── collectibles/
+│   │   │   ├── collectible-list.tsx
+│   │   │   ├── collectible-card.tsx
+│   │   │   └── collectible-filters.tsx
+│   │   │
+│   │   ├── challenges/
+│   │   │   ├── challenge-list.tsx
+│   │   │   ├── challenge-card.tsx
+│   │   │   └── challenge-progress.tsx
+│   │   │
+│   │   ├── achievements/
+│   │   │   ├── achievement-list.tsx
+│   │   │   ├── achievement-card.tsx
+│   │   │   └── achievement-filters.tsx
+│   │   │
+│   │   ├── vehicles/
+│   │   │   ├── vehicle-list.tsx
+│   │   │   ├── vehicle-card.tsx
+│   │   │   └── vehicle-performance.tsx
+│   │   │
+│   │   ├── businesses/
+│   │   │   ├── business-list.tsx
+│   │   │   ├── business-card.tsx
+│   │   │   └── business-upgrades.tsx
+│   │   │
+│   │   ├── map/
+│   │   │   ├── interactive-map.tsx
+│   │   │   ├── map-marker.tsx
+│   │   │   ├── map-fallback.tsx
+│   │   │   └── map-filters.tsx
+│   │   │
+│   │   ├── stats/
+│   │   │   ├── stats-charts.tsx
+│   │   │   ├── progress-chart.tsx
+│   │   │   └── performance-chart.tsx
+│   │   │
+│   │   ├── notifications/
+│   │   │   ├── notification-list.tsx
+│   │   │   ├── notification-item.tsx
+│   │   │   └── notification-settings.tsx
+│   │   │
+│   │   └── ui/
+│   │       ├── button.tsx
+│   │       ├── badge.tsx
+│   │       ├── card.tsx
+│   │       ├── input.tsx
+│   │       ├── label.tsx
+│   │       ├── dropdown-menu.tsx
+│   │       ├── dialog.tsx
+│   │       ├── modal.tsx
+│   │       ├── drawer.tsx
+│   │       ├── toast.tsx
+│   │       ├── skeleton.tsx
+│   │       ├── empty-state.tsx
+│   │       ├── error-state.tsx
+│   │       ├── confirm-dialog.tsx
+│   │       ├── data-table.tsx
+│   │       ├── filter-bar.tsx
+│   │       ├── pagination.tsx
+│   │       ├── search-command.tsx
+│   │       ├── avatar.tsx
+│   │       ├── progress.tsx
+│   │       ├── gradient-progress.tsx
+│   │       ├── radial-progress.tsx
+│   │       └── select.tsx
+│   │
+│   ├── hooks/
+│   │   ├── use-game-data.ts
+│   │   ├── use-progress.ts
+│   │   ├── use-reminders.ts
+│   │   ├── use-notifications.ts
+│   │   ├── use-search.ts
+│   │   ├── use-ai-recommendations.ts
+│   │   ├── use-media-query.ts
+│   │   ├── use-local-storage.ts
+│   │   └── use-debounce.ts
+│   │
+│   ├── lib/
+│   │   ├── supabase/
+│   │   │   ├── client.ts
+│   │   │   ├── server.ts
+│   │   │   └── middleware.ts
+│   │   │
+│   │   ├── ai/
+│   │   │   ├── provider.ts
+│   │   │   ├── openai-provider.ts
+│   │   │   ├── fallback-provider.ts
+│   │   │   └── types.ts
+│   │   │
+│   │   ├── game-data/
+│   │   │   ├── index.ts
+│   │   │   ├── types.ts
+│   │   │   └── providers/
+│   │   │       ├── mock.ts
+│   │   │       └── official.ts
+│   │   │
+│   │   ├── notifications/
+│   │   │   ├── web-push.ts
+│   │   │   ├── service-worker.ts
+│   │   │   └── vapid.ts
+│   │   │
+│   │   ├── security/
+│   │   │   ├── rate-limit.ts
+│   │   │   ├── sanitize.ts
+│   │   │   └── validate.ts
+│   │   │
+│   │   ├── repositories/
+│   │   │   ├── profile-repository.ts
+│   │   │   ├── mission-repository.ts
+│   │   │   ├── collectible-repository.ts
+│   │   │   ├── challenge-repository.ts
+│   │   │   ├── achievement-repository.ts
+│   │   │   ├── vehicle-repository.ts
+│   │   │   ├── business-repository.ts
+│   │   │   ├── reminder-repository.ts
+│   │   │   ├── notification-repository.ts
+│   │   │   └── activity-repository.ts
+│   │   │
+│   │   ├── constants.ts
+│   │   ├── utils.ts
+│   │   └── validations.ts
+│   │
+│   ├── data/
+│   │   ├── mock-data.ts
+│   │   ├── missions.ts
+│   │   ├── collectibles.ts
+│   │   ├── challenges.ts
+│   │   ├── achievements.ts
+│   │   ├── vehicles.ts
+│   │   ├── businesses.ts
+│   │   └── map-locations.ts
+│   │
+│   ├── types/
+│   │   ├── index.ts
+│   │   ├── user.ts
+│   │   ├── game.ts
+│   │   ├── progress.ts
+│   │   ├── api.ts
+│   │   └── database.ts
+│   │
+│   └── middleware.ts
+│
+├── supabase/
+│   ├── migrations/
+│   │   ├── 001_initial_schema.sql
+│   │   └── 002_row_level_security.sql
+│   └── seed.sql
+│
+├── tests/
+│   ├── unit/
+│   │   ├── progress.test.ts
+│   │   ├── validation.test.ts
+│   │   ├── reminder-scheduling.test.ts
+│   │   ├── search.test.ts
+│   │   ├── ai-fallback.test.ts
+│   │   └── data-transformation.test.ts
+│   │
+│   ├── component/
+│   │   ├── progress-card.test.tsx
+│   │   ├── stat-card.test.tsx
+│   │   ├── reminder-card.test.tsx
+│   │   ├── mission-list.test.tsx
+│   │   └── search-command.test.tsx
+│   │
+│   ├── e2e/
+│   │   ├── landing-page.spec.ts
+│   │   ├── demo-dashboard.spec.ts
+│   │   ├── login.spec.ts
+│   │   ├── navigation.spec.ts
+│   │   ├── mark-mission-complete.spec.ts
+│   │   ├── create-reminder.spec.ts
+│   │   ├── search.spec.ts
+│   │   └── mobile-navigation.spec.ts
+│   │
+│   └── setup.ts
+│
+├── .env.example
+├── .gitignore
+├── package.json
+├── next.config.ts
+├── tsconfig.json
+├── components.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+├── vitest.config.ts
+├── playwright.config.ts
+├── README.md
+└── LICENSE
